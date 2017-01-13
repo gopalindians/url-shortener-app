@@ -37,8 +37,7 @@ Sign up
 .. image:: url-app-assets\url-app-signup.png
    :height: 300px
    :width: 400px
-    :alt: Sign up screen
-
+   :alt: Sign up screen
 
 *******************
 Server Requirements
