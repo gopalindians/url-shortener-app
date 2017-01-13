@@ -3,7 +3,7 @@ Url Shortener App
 ###################
 
 Url Shortener App is a small prototype of bit.ly,goo.gl and similar type of url shorteners.
-This app is made using CodeIgniter 3 ,Bootstrap 3 and Mysql.
+This app is made using CodeIgniter 3, Bootstrap 3 and Mysql.
 This source code is useful when used with the Video series available on Youtube.
 `CodeBeing YouTube Channel | Url Shortener Web App
 <https://www.youtube.com/watch?v=DzpRH_dXN8U&list=PLvj1VBqDC8jvQdNiKABWzi1tlOJ64lzw_>`_
