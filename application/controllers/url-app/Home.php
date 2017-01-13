@@ -20,27 +20,4 @@ class Home extends CI_Controller
         }
 
     }
-
-
-    public function getusers()
-    {
-
-        $date = new DateTime();
-        $users = [
-            0 => [
-                'name' => 'Gopal',
-                'age' => 26,
-                'place' => 'Jammu',
-                'created_at' => $date->format('Y-m-d H:i:s')
-            ], 1 => [
-                'name' => 'गोपाल',
-                'age' => 25,
-                'place' => 'Jammu',
-                'created_at' => $date->format('Y-m-d H:i:s')
-            ],
-        ];
-
-        header('Content-type:application/json; charset=UTF-8');
-        echo json_encode($users);
-    }
 }

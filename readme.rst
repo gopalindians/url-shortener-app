@@ -5,7 +5,7 @@ Url Shortener App
 Url Shortener App is a small prototype of bit.ly,goo.gl and similar type of url shorteners.
 This app is made using CodeIgniter 3 ,Bootstrap 3 and Mysql.
 This source code is useful when used with the Video series available on Youtube.
-`CodeBeing YouTube Channel |Url Shortener Web App
+`CodeBeing YouTube Channel | Url Shortener Web App
 <https://www.youtube.com/watch?v=DzpRH_dXN8U&list=PLvj1VBqDC8jvQdNiKABWzi1tlOJ64lzw_>`_
 
 
@@ -14,7 +14,7 @@ Working Demo
 *******************
 
 Working demo for this source code can be found on  `Demo Page on Code Being.com
-<https://codeigniter.com/download>`_ .
+<http://demos.codebeing.com/url-app>`_ .
 
 
 *******************
@@ -32,14 +32,11 @@ issues, as well as missing features.
 Installation
 ************
 
-`git clone https://github.com/gopalindians/url-shortner-app.git`
-`cd url-shortner-app`
-
-add database setting in `config/database.php`  
-
-`php -S localhost:80`
-
-open the http://localhost/ in your browser to see the working app
+a)`git clone https://github.com/gopalindians/url-shortner-app.git`
+b)`cd url-shortner-app`
+c)add database setting in `config/database.php`
+d)`php -S localhost:80`
+e)open the http://localhost/ in your browser to see the working app
  
 
 *******
