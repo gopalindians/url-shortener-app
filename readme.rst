@@ -67,6 +67,9 @@ Installation
 
 - add database setting in config/database.php
 
+- add your own reCAPTCHA key in views/url-app/account/login.php and views/url-app/account/signup.php
+Use google admin link `here <https://www.google.com/recaptcha/admin>`_ for more detail on reCAPTCHA.
+
 - php -S localhost:80
 
 - open the http://localhost/ in your browser to see the working app
