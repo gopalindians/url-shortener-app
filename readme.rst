@@ -33,7 +33,7 @@ issues, as well as missing features.
 Installation
 ************
 
-- git clone https://github.com/gopalindians/url-shortner-app.git
+- git clone https://github.com/gopalindians/url-shortener-app.git
 
 - cd url-shortner-app
 
