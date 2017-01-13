@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="g-recaptcha pull-right" data-sitekey="6LedKxEUAAAAADdyZQl6bRUI1gQYgWzuij7L9ELm"></div>
+    <div class="g-recaptcha pull-right" data-sitekey="ADD_YOUR_OWN_KEY_HERE"></div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-success">Sign up</button>
