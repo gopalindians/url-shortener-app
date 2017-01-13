@@ -39,6 +39,13 @@ Sign up
    :width: 400px
    :alt: Sign up screen
 
+Home
+
+.. image:: url-app-assets\url-app-shorten-page.png
+   :height: 300px
+   :width: 400px
+   :alt: Home screen
+
 *******************
 Server Requirements
 *******************
