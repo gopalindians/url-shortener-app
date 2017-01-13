@@ -23,7 +23,22 @@ Working demo for this source code can be found on  `Demo Page on Code Being.com
 Screenshots
 *******************
 
+
+Login
+
 .. image:: url-app-assets\url-app-login.png
+   :height: 300px
+   :width: 400px
+   :alt: Login screen
+
+
+Sign up
+
+.. image:: url-app-assets\url-app-signup.png
+   :height: 300px
+   :width: 400px
+    :alt: Sign up screen
+
 
 *******************
 Server Requirements
