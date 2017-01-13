@@ -54,7 +54,7 @@ agreement <https://github.com/philsturgeon/dbad/blob/master/LICENSE.md>`_.
 Community
 *********
 
--  :video_camera: `Youtube Channel <https://www.youtube.com/channel/UCN5FNarpN8Vy0NwCYMhx5dQ>`_
+-   `Youtube Channel <https://www.youtube.com/channel/UCN5FNarpN8Vy0NwCYMhx5dQ>`_
 -  `Facebook Page <https://www.facebook.com/CodeBeingDotCom/>`_
 -  `Twitter Handle   <https://twitter.com/code_being/>`_
 -  `Email <codebeingdotcom@gmail.com>`_
