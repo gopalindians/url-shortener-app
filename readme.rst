@@ -32,15 +32,15 @@ issues, as well as missing features.
 Installation
 ************
 
-a)`git clone https://github.com/gopalindians/url-shortner-app.git`
+a) git clone https://github.com/gopalindians/url-shortner-app.git
 
-b)`cd url-shortner-app`
+b) cd url-shortner-app
 
-c)add database setting in `config/database.php`
+c) add database setting in config/database.php
 
-d)`php -S localhost:80`
+d) php -S localhost:80
 
-e)open the http://localhost/ in your browser to see the working app
+e) open the http://localhost/ in your browser to see the working app
  
 
 *******
