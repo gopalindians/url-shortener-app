@@ -15,7 +15,7 @@
 <div class=" col-lg-offset-4">
     <?= form_open('/url-app/url/handleUrl', ['class' => 'form-inline']) ?>
     <div class="form-group">
-        <input type="url" class="form-control" id="url" placeholder="http://mylongurl.com" name="url">
+        <input type="url" class="form-control" id="url" placeholder="http://mylongurl.com" name="url" required>
     </div>
     <button type="submit" class="btn btn-default">Shorten it</button>
     <?= form_close() ?>
