@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 class Url extends CI_Controller
 {
 
@@ -19,14 +20,13 @@ class Url extends CI_Controller
     public function handleUrl()
     {
 
-        $this->form_validation->set_rules('url', 'Url', 'required|trim');
+        $this->form_validation->set_rules('url', 'Url', 'required|trim|valid_url|max_length[1500]');
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('url-app/include/header.php');
             $this->load->view('url-app/url/index.php');
             $this->load->view('url-app/include/footer.php');
         } else {
             $url = $this->input->post('url');
-
             if (count($this->Url_Model->checkIfUrlAlreadyExits($url)) === TRUE) {
                 //return the existing short url
             } else {
@@ -45,6 +45,10 @@ class Url extends CI_Controller
     }
 
 
+    /**
+     * used to redirect the users to
+     * form short url to its original url
+     */
     public function r()
     {
         $shortUrl = $this->uri->segment(4, 0);
