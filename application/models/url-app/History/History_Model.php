@@ -1,5 +1,5 @@
 <?php
-
+defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * Created by PhpStorm.
  * User:
@@ -16,18 +16,24 @@ class History_Model extends CI_Model
     }
 
 
-    public function getUrlHistory($userId)
+    public function getUrlHistory($userId, $limit = 5, $offset = 0)
     {
-        $query = $this->db->get_where('urls', [
-            'user_id' => $userId
-        ]);
+        $query = $this->db
+            ->order_by('updated_at', 'DESC')
+            ->get_where('urls', [
+                'user_id' => $userId
+            ], $limit, $offset);
         if (count($query->result_array()) > 0) {
-            return $query->result_array();
+
+            $result = $query->result_array();
+
+            foreach ($result as $key => $item) {
+                unset($result[$key]['user_id'], $result[$key]['url_id']);
+            }
+            return $result;
         } else {
             return FALSE;
         }
-
-
     }
 
 
