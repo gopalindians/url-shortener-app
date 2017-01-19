@@ -41,14 +41,68 @@ if ($_SERVER['REMOTE_ADDR'] === '::1' || $_SERVER['REMOTE_ADDR'] === '127.0.0.1'
     $_SERVER['CI_HOST'] = 'localhost';
     $_SERVER['CI_HOST_DEMOS'] = 'localhost';
 
-    $_SERVER['CI_URL_APP_USERS']='users';
+
+    /*******************************
+     *   CUSTOM VARIABLES
+     *
+     *   1 set table names for production table
+     *
+     *   2 $_SERVER['CI_URL_APP_USERS'] = 'users';  for string users in database
+     *
+     *   3 $_SERVER['CI_URL_APP_URLS'] = 'urls';  for string urls in database
+     *
+     *
+     *
+     *
+     *******************************/
+
+    /*'users' table in database*/
+    $_SERVER['CI_URL_APP_USERS'] = 'users';
+
+    /*'urls' table in database*/
+    $_SERVER['CI_URL_APP_URLS'] = 'urls';
+
 } else {
     $_SERVER['CI_ENV'] = 'production';
     $_SERVER['CI_HOST'] = 'YOUR_PRODUCTION_URL'; //codebeing.com
     $_SERVER['CI_HOST_DEMOS'] = 'YOUR_PRODUCTION_DEMO_URL'; //example demos.codebeing.com
 
-    /*custom variables*/
-    $_SERVER['CI_URL_APP_USERS']='demos_url_app_users';
+    /*******************************
+     *    CUSTOM VARIABLES
+     *
+     *   1 $_SERVER['CI_URL_APP_USERS'] = 'demos_url_app_users'; for storing 'users' in production database
+     *
+     *   2 $_SERVER['CI_URL_APP_URLS'] = 'demos_url_app_urls'; for storing 'urls' in production database
+     *
+     *
+     *
+     *******************************/
+
+    /*'users' table in database*/
+    $_SERVER['CI_URL_APP_USERS'] = 'demos_url_app_users';
+
+    /*'urls' table in database*/
+    $_SERVER['CI_URL_APP_URLS'] = 'demos_url_app_urls';
+
+    function get_client_ip()
+    {
+        $ipaddress = '';
+        if (isset($_SERVER['HTTP_CLIENT_IP']))
+            $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+        else if (isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+            $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        else if (isset($_SERVER['HTTP_X_FORWARDED']))
+            $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+        else if (isset($_SERVER['HTTP_FORWARDED_FOR']))
+            $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+        else if (isset($_SERVER['HTTP_FORWARDED']))
+            $ipaddress = $_SERVER['HTTP_FORWARDED'];
+        else if (isset($_SERVER['REMOTE_ADDR']))
+            $ipaddress = $_SERVER['REMOTE_ADDR'];
+        else
+            $ipaddress = 'UNKNOWN';
+        return $ipaddress;
+    }
 }
 /*
  *---------------------------------------------------------------
