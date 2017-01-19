@@ -41,6 +41,7 @@
 
 </head>
 <body>
+<input type="hidden" id="meta_email" value="<?= $this->session->userdata('email') ?>">
 
 <div class="container">
 
@@ -67,6 +68,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 
+                    <?php if ($this->uri->segment(2) === 'history'): ?>
+                        <li class="active"><a href="/url-app/history" >History</a></li>
+                    <?php else: ?>
+                        <li><a href="/url-app/history">History</a></li>
+                    <?php endif; ?>
 
                     <?php if ($this->session->userdata('email') !== NULL): ?>
                         <li><a href="#"><?= $this->session->userdata('email') ?></a></li>
@@ -80,4 +86,5 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
