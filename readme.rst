@@ -63,7 +63,7 @@ Installation
 
 - git clone https://github.com/gopalindians/url-shortener-app.git
 
-- cd url-shortner-app
+- cd url-shortener-app
 
 - add database setting in config/database.php
 
