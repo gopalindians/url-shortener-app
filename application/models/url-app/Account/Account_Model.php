@@ -1,11 +1,5 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User:
- * Date: 09-01-2017
- * Time: 18:26
- */
+defined('BASEPATH') OR exit('No direct script access allowed');
 class Account_Model extends CI_Model
 {
 
@@ -69,6 +63,20 @@ class Account_Model extends CI_Model
 
         if (count($query->result_array()) > 0) {
             return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
+    public function getUserData($email)
+    {
+
+        $query = $this->db->get_where($_SERVER['CI_URL_APP_USERS'], [
+            'email' => $email
+        ]);
+
+        if (count($query->result_array()) > 0) {
+            return $query->result_array();
         } else {
             return FALSE;
         }
