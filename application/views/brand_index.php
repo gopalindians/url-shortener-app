@@ -72,16 +72,15 @@
         <td>Status</td>
         <td>Video Link</td>
         <td>Updated on</td>
-        <td>Hits</td>
         </thead>
 
         <tr>
             <td>1</td>
             <td><a href="/url-app">Url Shortener app</a></td>
             <td class="">Not Completed</td>
-            <td><a href="https://www.youtube.com/playlist?list=PLvj1VBqDC8jvQdNiKABWzi1tlOJ64lzw_">Link(3 Videos)</a></td>
-            <td>01-01-2017</td>
-            <td>10</td>
+            <td><a href="https://www.youtube.com/playlist?list=PLvj1VBqDC8jvQdNiKABWzi1tlOJ64lzw_">Link(5 Videos)</a></td>
+            <td>17-01-2017</td>
+
         </tr>
     </table>
 </div>
