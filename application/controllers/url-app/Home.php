@@ -13,7 +13,7 @@ class Home extends CI_Controller
     {
         if ($this->session->userdata('email') !== NULL) {
             $this->load->view('url-app/include/header.php');
-            $this->load->view('url-app/url/index.php');
+            $this->load->view('url-app/home/index.php');
             $this->load->view('url-app/include/footer.php');
         } else {
             redirect('/url-app/account/login');
