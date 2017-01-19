@@ -46,6 +46,12 @@ Home
    :width: 400px
    :alt: Home screen
 
+History
+
+.. image:: url-app-assets\url-app-history.png
+   :height: 300px
+   :width: 400px
+   :alt: History screen
 *******************
 Server Requirements
 *******************
