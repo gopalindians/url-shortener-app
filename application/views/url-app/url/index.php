@@ -4,8 +4,11 @@
 
 
 <?php if (NULL !== $this->session->flashdata('url_success')): ?>
-<div class="alert alert-success" role="alert">
-    Shortened url is <a href="<?= base_url('url-app/url/r/') . $this->session->flashdata('url_success'); ?>"><?= base_url('url-app/url/r/') . $this->session->flashdata('url_success'); ?></a>
+    <div class="alert alert-success" role="alert">
+        Shortened url is <a target="_blank"
+                            href="<?= base_url('url-app/url/r/') . $this->session->flashdata('url_success') ?>">
+            <?= base_url('url-app/url/r/') . $this->session->flashdata('url_success'); ?>
+        </a>
     </div>
 <?php endif; ?>
 
