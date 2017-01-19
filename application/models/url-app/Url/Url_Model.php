@@ -11,7 +11,7 @@ class Url_Model extends CI_Model
     public function checkIfUrlAlreadyExits($url)
     {
 
-        $query = $this->db->get_where('urls', [
+        $query = $this->db->get_where($_SERVER['CI_URL_APP_URLS'], [
             'original_url' => $url
         ]);
 
@@ -31,7 +31,7 @@ class Url_Model extends CI_Model
         $randomString = random_string('alnum');
 
         $d = $date->format('Y-m-d\TH:i:s.u');
-        $this->db->insert('urls', [
+        $this->db->insert($_SERVER['CI_URL_APP_URLS'], [
             'original_url' => $url,
             'short_url' => $randomString,
             'user_id' => $userId,
@@ -39,7 +39,7 @@ class Url_Model extends CI_Model
             'updated_at' => $d
         ]);
 
-        $query = $this->db->get_where('urls', [
+        $query = $this->db->get_where($_SERVER['CI_URL_APP_URLS'], [
             'original_url' => $url,
             'short_url' => $randomString,
             'user_id' => $userId,
@@ -51,7 +51,7 @@ class Url_Model extends CI_Model
     public function checkIfShortUrlExists($shortUrl)
     {
 
-        $query = $this->db->get_where('urls', [
+        $query = $this->db->get_where($_SERVER['CI_URL_APP_URLS'], [
             'short_url' => $shortUrl
         ]);
 
