@@ -17,7 +17,7 @@
                 </td>
                 <td title="<?= base_url('url-app/url/r/' . $history['short_url']) ?>">
                     <a href="<?= base_url('url-app/url/r/' . $history['short_url']) ?>">
-                        <?= '/url-app/url/r /' . $history['short_url'] ?>
+                        <?= '/url-app/url/r/' . $history['short_url'] ?>
                     </a>
                 </td>
                 <td><?= $history['created_at'] ?></td>
