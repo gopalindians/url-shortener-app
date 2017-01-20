@@ -20,7 +20,7 @@ class History_Model extends CI_Model
     {
         $query = $this->db
             ->order_by('updated_at', 'DESC')
-            ->get_where('urls', [
+            ->get_where($_SERVER['CI_URL_APP_URLS'], [
                 'user_id' => $userId
             ], $limit, $offset);
         if (count($query->result_array()) > 0) {
