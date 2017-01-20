@@ -78,8 +78,8 @@
             <td>1</td>
             <td><a href="/url-app">Url Shortener app</a></td>
             <td class="">Not Completed</td>
-            <td><a href="https://www.youtube.com/playlist?list=PLvj1VBqDC8jvQdNiKABWzi1tlOJ64lzw_">Link(5 Videos)</a></td>
-            <td>17-01-2017</td>
+            <td><a href="https://www.youtube.com/playlist?list=PLvj1VBqDC8jvQdNiKABWzi1tlOJ64lzw_">Link(6 Videos)</a></td>
+            <td>21-01-2017</td>
 
         </tr>
     </table>
