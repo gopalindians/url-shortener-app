@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 /**
- * Created by PhpStorm.
- * User:
+ * Used for handling History of Urls submitted
  * Date: 19-01-2017
  * Time: 17:03
  */
@@ -16,6 +16,13 @@ class History_Model extends CI_Model
     }
 
 
+    /**
+     * Handles the url history of user  based on $userId $limit and $offset value
+     * @param int $userId currently logged in user
+     * @param int $limit number of results to be shown in  one request
+     * @param int $offset starting of results example 10 to 15
+     * @return bool
+     */
     public function getUrlHistory($userId, $limit = 5, $offset = 0)
     {
         $query = $this->db
@@ -24,9 +31,7 @@ class History_Model extends CI_Model
                 'user_id' => $userId
             ], $limit, $offset);
         if (count($query->result_array()) > 0) {
-
             $result = $query->result_array();
-
             foreach ($result as $key => $item) {
                 unset($result[$key]['user_id'], $result[$key]['url_id']);
             }
@@ -35,6 +40,4 @@ class History_Model extends CI_Model
             return FALSE;
         }
     }
-
-
 }
