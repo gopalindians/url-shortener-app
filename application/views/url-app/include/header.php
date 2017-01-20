@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Demos | CodeBeing.com</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="<?= base_url('url-app-assets/apple-icon-57x57.png') ?>">
     <link rel="apple-touch-icon" sizes="60x60" href="<?= base_url('url-app-assets/apple-icon-60x60.png') ?>">
