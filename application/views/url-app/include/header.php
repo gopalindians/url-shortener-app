@@ -67,11 +67,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-
-                    <?php if ($this->uri->segment(2) === 'history'): ?>
-                        <li class="active"><a href="/url-app/history" >History</a></li>
-                    <?php else: ?>
-                        <li><a href="/url-app/history">History</a></li>
+                    <?php if ($this->session->userdata('email') !== NULL): ?>
+                        <?php if ($this->uri->segment(2) === 'history'): ?>
+                            <li class="active"><a href="/url-app/history">History</a></li>
+                        <?php else: ?>
+                            <li><a href="/url-app/history">History</a></li>
+                        <?php endif; ?>
                     <?php endif; ?>
 
                     <?php if ($this->session->userdata('email') !== NULL): ?>
