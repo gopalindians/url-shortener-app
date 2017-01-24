@@ -57,7 +57,7 @@ Profile
 
 History
 
-.. image:: url-app-assets\url-app-history.png
+.. image:: url-app-assets\url-app-history.png?v=1.1
    :height: 300px
    :width: 400px
    :alt: History screen
