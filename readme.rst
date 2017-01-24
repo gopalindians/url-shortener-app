@@ -46,6 +46,15 @@ Home
    :width: 400px
    :alt: Home screen
 
+
+Profile
+
+.. image:: url-app-assets\url-app-profile.png
+   :height: 300px
+   :width: 400px
+   :alt: Profile screen
+
+
 History
 
 .. image:: url-app-assets\url-app-history.png
