@@ -136,4 +136,5 @@ $autoload['model'] = array(
     'url-app/Account/Account_Model',
     'url-app/Url/Url_Model',
     'url-app/History/History_Model',
+    'url-app/Profile/Profile_Model',
 );
