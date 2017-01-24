@@ -1,5 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
+/**
+ * Class Account Handles User account related ops
+ * login
+ * Signup etc
+ */
 class Account extends CI_Controller
 {
     public function __construct()
