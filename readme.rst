@@ -41,7 +41,7 @@ Sign up
 
 Home
 
-.. image:: url-app-assets\url-app-shorten-page.png
+.. image:: url-app-assets\url-app-shorten-page.png?v=1.1
    :height: 300px
    :width: 400px
    :alt: Home screen
