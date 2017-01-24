@@ -69,23 +69,29 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <?php if ($this->session->userdata('email') !== NULL): ?>
+
+
+                        <?php if ($this->uri->segment(2) === NULL || 'home' === $this->uri->segment(2)): ?>
+                            <li class="active"><a href="/url-app/">Home</a></li>
+                        <?php else: ?>
+                            <li><a href="/url-app/">Home</a></li>
+                        <?php endif; ?>
+
+
                         <?php if ($this->uri->segment(2) === 'profile'): ?>
                             <li class="active"><a href="/url-app/profile">Profile</a></li>
                         <?php else: ?>
                             <li><a href="/url-app/profile">Profile</a></li>
                         <?php endif; ?>
-                    <?php endif; ?>
 
-                    <?php if ($this->session->userdata('email') !== NULL): ?>
+
                         <?php if ($this->uri->segment(2) === 'history'): ?>
                             <li class="active"><a href="/url-app/history">History</a></li>
                         <?php else: ?>
                             <li><a href="/url-app/history">History</a></li>
                         <?php endif; ?>
-                    <?php endif; ?>
 
-                    <?php if ($this->session->userdata('email') !== NULL): ?>
-                        <li><a href="#"><?= $this->session->userdata('email') ?></a></li>
+
                         <li><a href="/url-app/account/logout">Logout</a></li>
                     <?php else: ?>
                         <li><a href="/url-app/account/login">Login</a></li>
